@@ -63,11 +63,11 @@ nav.sticky {
 
 nav.sticky ul li a {
     transition: ease-in 0.2s;
-    color: #15171C;
+    color: var(--secondaryColor);
 }
 
 nav.sticky ul li a:hover {
-    color: var(--lightSecondaryColor);
+    color: var(--primaryColor);
 }
 
 header {
