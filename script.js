@@ -5,5 +5,11 @@ window.addEventListener("scroll", () => {
     // show home element only when scrolled 
     const home = document.querySelector("#home");
     home.classList.toggle("show", window.scrollY > 0);
+
+
+    const navUl = document.querySelector("#navUl");
+    navUl.classList.toggle("sticky", window.scrollY > 0);
  })
+
+
  
