@@ -14,15 +14,20 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-    border-radius: 0px;
-    background-color: rgb(194, 139, 36);
-    border: 1px solid rgb(155, 110, 28);
-    box-shadow: inset 0 0 6px rgba(129, 92, 23, 0.3);
+    border-radius: 10px;
+    background-color: rgb(20, 20, 20);
+    border: 1px solid black;
+    box-shadow: inset 0 0 6px rgba(50, 50, 50, 0.4);
 }
 
 html::-webkit-scrollbar-thumb {
-    border-radius: 0px;
-    background-color: #363636;
+    border-radius: 10px;
+    background-color: var(--sceondaryTextColor);
+    box-shadow: inset 0 0 5px rgba(50, 50, 50, 0.4);
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background-color: #777879;
 }
 
 * {
@@ -52,6 +57,7 @@ nav {
     align-items: center;  
     transition: 0.5s;
     padding: 2% 0;
+    z-index: 1;
 }
 
 nav ul {  
@@ -114,7 +120,7 @@ nav.sticky {
 
 nav.sticky a {
     transition: ease-in 0.2s;
-    color: rgb(61, 61, 61);
+    color: rgb(50, 50, 50);
 }
 
 nav.sticky ul li a:hover {
@@ -228,6 +234,16 @@ h1 {
     max-height: 250px;
     border: solid 2px rgb(212, 151, 37);
     border-radius: 1.5rem;
+    filter: grayscale(90%);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;    
+}
+
+.projectContent img:hover {
+    filter: grayscale(0);
+    transform: translateY(-5%);
+    transition: ease-in-out 70ms;
+    box-shadow: rgba(240, 225, 93, 0.5) 5px 5px, rgba(240, 225, 93, 0.3) 10px 10px, rgba(240, 225, 93, 0.2) 15px 15px, rgba(240, 230, 93, 0.1) 20px 20px, rgba(240, 230, 93, 0.05) 25px 25px;
+    /* box-shadow: rgba(200, 200, 200, 0.8) 15px 15px 15px 0px; */
 }
 
 .projectContent a {
@@ -235,13 +251,14 @@ h1 {
 }
 
 .projectTextLink {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 8px;
     border-radius: 0.8rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 
 footer {
-    padding: 100px 200px 25px 200px;
+    padding: 100px 200px 50px 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -257,16 +274,53 @@ footer {
 
 .infoLinks {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    width: 800px;
-    gap: 5px;
+    width: 850px;
+    gap: 8vw;
+    flex: 1;
 }
 
 .headerText, .aboutText, .infoText {
     line-height: 175%;
 }
 
+#emailContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#email {
+    margin-right: 0.5vw;
+}
+
+#github  {
+    padding: 0 5px;
+    height: 50px;
+}
+
+#copyBtn {
+    padding: 7px 5px;
+    width: 83px;
+}
+
+#copyBtn, #github {
+    color: var(--secondaryTextColor);
+    border: solid 2px var(--sceondaryTextColor);
+    border-radius: 4px;
+    background-color: black;
+    box-shadow: rgba(200, 200, 200, 0.4) 4px 4px 4px 0px;
+    outline: solid black 1px;
+}
+
+#copyBtn:hover, #github:hover {
+    box-shadow: rgba(200, 200, 200, 0.8) 5px 5px 5px 0px;
+    transform: translateY(-5%);
+}
 
 
 
