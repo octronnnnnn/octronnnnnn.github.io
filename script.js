@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", () => {
 // nav bar animation
 window.addEventListener("scroll", () => {
     const navBar = document.querySelector("nav");
@@ -5,10 +6,6 @@ window.addEventListener("scroll", () => {
     // show home element only when scrolled 
     const home = document.querySelector("#home");
     home.classList.toggle("show", window.scrollY > 0);
-
-
-    const navUl = document.querySelector("#navUl");
-    navUl.classList.toggle("sticky", window.scrollY > 0);
  })
 
 //copy email to clipboard
@@ -25,3 +22,4 @@ const copyContent = async () => {
 }
 
 document.getElementById("copyBtn").addEventListener("click", copyContent);
+})
