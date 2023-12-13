@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,59 +7,26 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li id="home"><a href="#">Home</a></li>
-        </ul>
-    </nav>
     <header>
-            <div class="headerText">
-                <h1>Valentino Clesi</h1>
-                <p class="subheader">I have decided to pursue a career in swoftware development, because I like to express my visions and creativity in various different ways. I enjoy learning new things and I am working everyday to improve my knowledge and skills.<br>Here are some skills I am proficient in: JavaScript, HTML, CSS, Git, Linux CLI.</p>
-            </div>
-            <div class="portrait">
-                <img src="./assets/images/portraitPlaceholder.webp" alt="Portrait" draggable="false">
-        </div>
+        <h1><span class="red">Willkommen</span> auf meinem Portfolio</h1>
     </header>
-    <section id="about">
-        <h2>About</h2>
-        <p class="aboutText">Hello, welcome to my portfolio website. I am a selftaught Webdeveloper, looking to expand my horizon and to improve myself, as well as my programming skills. This is a place where I document and share my progress. This website is an ever-expanding portfolio of my work and I will further expand this section in the future with more and more projects as i continue to learn and improve.<br>Below you can find links to some live projects I'm working on. All of the source code is public on my <a href="https://github.com/octronnnnnn" target="_blank" rel="noopener noreferrer">GitHub</a>. Please feel free to browse my page and look around.</p>
-    </section>
-    <section id="projects">
-        <div id="projectBorderContainer">
-            <h2>Projects</h2>
-            <div class="projectContainer">
-                <div class="projectContent">
-                    <a href="https://octronnnnnn.github.io/Rock-Paper-Scissors/" target="_blank" rel="noopener noreferrer"><img id="rockPaperScissors" src="./assets/images/rockPaperScissorsSquare.png" alt="Image of the rock paper scissors website" draggable="false"></a>
-                    <p class="projectText">Rock Paper Scissors</p>
-                </div>
-                <div class="projectContent">
-                    <a href="https://octronnnnnn.github.io/Etch-a-Sketch/" target="_blank" rel="noopener noreferrer"><img id="etchASketch" src="./assets/images/etchASketchSquare.png" alt="Image of the etch a sketch website" draggable="false"></a>
-                    <p class="projectText">Etch-a-Sketch</p>
-                </div>
-                <div class="projectContent">
-                    <a href="https://octronnnnnn.github.io/calculator/" target="_blank" rel="noopener noreferrer"><img id="calculator" src="./assets/images/calculatorCenteredSquare.png" alt="Image of the calculator website" draggable="false"></a>
-                    <p class="projectText">Calculator</p>
-                </div>
+    <main id="overview">
+            <div id="projects" class="contentContainer">
+                <a href="./pages/projects.html"><img src="./images/linesOfCode.png" alt="Image of some lines of Code"></a>
+                <p>Projekte</p>
             </div>
-        </div>
-    </section>
-    <footer id="contact">
-        <h2>Contact</h2>
-        <div class="contactContainer">
-            <p class="contactText">Did you find something interesting? Or maybe you have some questions?<br>If so, I'd love to get in touch with you!<br>I'll leave my Email and a link to my GitHub below.</p>
-        </div>
-        <div class="contactLinks">
-            <a href="https://github.com/octronnnnnn" target="_blank" rel="noopener noreferrer"><img id="github" src="./assets/images/Github-Logo-PNG-Clipart.png" alt="Github logo"></a>
-            <div id="emailContainer">
-                <span>Email:</span>
-                <span id="email">vclesi@web.de</span>
-                <button id="copyBtn">Copy Email</button>
+            <div id="about" class="contentContainer">
+                <a href="./pages/about.html"><img src="./images/profileIPicture.jpg" alt="Profile picture"></a>
+                <p>Über mich</p>
             </div>
-        </div>
+            <div id="git" class="contentContainer">
+                <a href="./pages/contact.html"><img src="./images/githubLogoSilver.png" alt="Silver GitHub"></a>
+                <p>Kontakt</p>
+            </div>
+    </main>
+    <footer>
+        <hr>
+        <p>© Valentino Clesi 2023</p>
     </footer>
     <script src="./script.js"></script>
 </body>
