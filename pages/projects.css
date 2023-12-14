@@ -1,7 +1,5 @@
 #projectContainer {
     margin-top: 1vw;
-    margin-left: 1vw;
-    margin-right: 1vw;
 }
 
 .projectContent img {
@@ -14,13 +12,13 @@
 
 .projectText {
     color: var(--textColor);
-   font-size: 25px;
+   font-size: 22px;
    font-weight: 600;
    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 #githubContainer {
-    margin-top: 4vw;
+    margin-top: 3vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,12 +59,6 @@
     margin-top: 0;
 }
 
-#github:hover {
-    scale: 1.1;
-    transition: 0.15s;
-}
-
-
 @media(max-width: 800px) {
     header {
         margin-top: 5vw;
@@ -78,12 +70,11 @@
     }
 
     #projectContainer p {
-        font-size: calc(20px + 1vw);
+        font-size: calc(16px + 1vw);
     }
 
     #githubContainer {
-        margin-top: 0;
-        margin-bottom: 6vw;
+        margin-top: 40px;
     }
 
     #githubContainer p {
